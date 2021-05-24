@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "cidade")
 @TypeDefs(value = {
-        @TypeDef(name = "point", typeClass = PointType.class)
+    @TypeDef(name = "point", typeClass = PointType.class)
 })
 public class City {
 

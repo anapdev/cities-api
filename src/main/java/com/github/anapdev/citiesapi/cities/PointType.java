@@ -41,9 +41,9 @@ public class PointType implements UserType {
 
         /* 2nd */
         String loc= names[0];
-        String t = rs.getString("lat_long");
-        double x = Double.parseDouble(loc.split(",")[0]);
-        double y = Double.parseDouble(loc.split(",")[1]);
+        String t = rs.getString(loc);
+        double x = Double.parseDouble(t.split(",")[0]);
+        double y = Double.parseDouble(t.split(",")[1]);
         return new Point(x, y);
     }
 

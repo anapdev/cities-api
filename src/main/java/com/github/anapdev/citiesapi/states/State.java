@@ -1,4 +1,4 @@
-package com.github.anapdev.citiesapi.staties;
+package com.github.anapdev.citiesapi.states;
 
 import com.github.anapdev.citiesapi.countries.Country;
 

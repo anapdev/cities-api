@@ -1,4 +1,4 @@
-package com.github.anapdev.citiesapi.staties;
+package com.github.anapdev.citiesapi.states;
 
 import com.github.anapdev.citiesapi.repository.StateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("staties")
+@RequestMapping("states")
 public class StateResource {
 
     @Autowired
     private StateRepository stateRepository;
 
     @GetMapping
-    public Page<State> staties (Pageable page) {
+    public Page<State> states (Pageable page) {
 
         return stateRepository.findAll(page);
     }

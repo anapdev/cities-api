@@ -25,6 +25,7 @@ public class CityResource {
 
     @GetMapping ("/{id}")
     public ResponseEntity getOne (@PathVariable Long id) {
+
         Optional<City> optinal = cityRepository.findById(id);
 
         if(optinal.isPresent()){
